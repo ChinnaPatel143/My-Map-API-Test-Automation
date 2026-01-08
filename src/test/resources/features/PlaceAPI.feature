@@ -16,4 +16,3 @@ Examples:
 	|name	|	language	|	address		|
 	|chinna	|	telugu		|	1-64 Ndm	|
 	|chutki	|	hindi		|	2-77 Db		|
-	|nanna	|	kannada		|	3-65 NDM	|

@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>2/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>0/3/0</td>
 </tr><tr>
-<td>Started on:</td><td>Thu Jan 08 18:11:07 IST 2026</td>
+<td>Started on:</td><td>Thu Jan 08 19:17:44 IST 2026</td>
 </tr>
-<tr><td>Total time:</td><td>5 seconds (5252 ms)</td>
+<tr><td>Total time:</td><td>1 seconds (1659 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,8 +67,8 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-passed'>
-<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td><b>Attribute(s)</b></td>
 <td width="30%"><b>Exception</b></td>
@@ -77,12 +77,170 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Add place api call with a valid address", "Google Map Place API calls"</td>
-<td></td>
-<td>4</td>
+<td><div><pre>io.cucumber.testng.UndefinedStepException: The step &apos;Add Place payload with &quot;nanna&quot; &quot;kannada&quot; and &quot;3-65 NDM&quot;&apos; and 4 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@Given(&quot;Add Place payload with {string} {string} and {string}&quot;)
+public void add_place_payload_with_and(String string, String string2, String string3) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When(&quot;user calls {string} api with Post http request&quot;)
+public void user_calls_api_with_post_http_request(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then(&quot;API call is success with the status code {int}&quot;)
+public void api_call_is_success_with_the_status_code(Integer int1) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then(&quot;{string} in response body is {string}&quot;)
+public void in_response_body_is(String string, String string2) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+	at ✽.Add Place payload with &quot;nanna&quot; &quot;kannada&quot; and &quot;3-65 NDM&quot;(file:///C:/Users/AkulaBhaskar/eclipse-workspace100/My-Map-API-Test-Automation/src/test/resources/features/PlaceAPI.feature:8)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1424788681", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1424788681'><pre>io.cucumber.testng.UndefinedStepException: The step &apos;Add Place payload with &quot;nanna&quot; &quot;kannada&quot; and &quot;3-65 NDM&quot;&apos; and 4 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@Given(&quot;Add Place payload with {string} {string} and {string}&quot;)
+public void add_place_payload_with_and(String string, String string2, String string3) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When(&quot;user calls {string} api with Post http request&quot;)
+public void user_calls_api_with_post_http_request(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then(&quot;API call is success with the status code {int}&quot;)
+public void api_call_is_success_with_the_status_code(Integer int1) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then(&quot;{string} in response body is {string}&quot;)
+public void in_response_body_is(String string, String string2) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+	at ✽.Add Place payload with &quot;nanna&quot; &quot;kannada&quot; and &quot;3-65 NDM&quot;(file:///C:/Users/AkulaBhaskar/eclipse-workspace100/My-Map-API-Test-Automation/src/test/resources/features/PlaceAPI.feature:8)
+</pre></div></td>
+<td>0</td>
 <td>runners.TestRunner@183ec003</td></tr>
 <tr>
 <td title='runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Add place api call with a valid address", "Google Map Place API calls"</td>
-<td></td>
+<td><div><pre>io.cucumber.testng.UndefinedStepException: The step &apos;Add Place payload with &quot;chutki&quot; &quot;hindi&quot; and &quot;2-77 Db&quot;&apos; and 4 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@Given(&quot;Add Place payload with {string} {string} and {string}&quot;)
+public void add_place_payload_with_and(String string, String string2, String string3) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When(&quot;user calls {string} api with Post http request&quot;)
+public void user_calls_api_with_post_http_request(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then(&quot;API call is success with the status code {int}&quot;)
+public void api_call_is_success_with_the_status_code(Integer int1) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then(&quot;{string} in response body is {string}&quot;)
+public void in_response_body_is(String string, String string2) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+	at ✽.Add Place payload with &quot;chutki&quot; &quot;hindi&quot; and &quot;2-77 Db&quot;(file:///C:/Users/AkulaBhaskar/eclipse-workspace100/My-Map-API-Test-Automation/src/test/resources/features/PlaceAPI.feature:8)
+</pre></div><a href='#' onClick='toggleBox("stack-trace205615258", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace205615258'><pre>io.cucumber.testng.UndefinedStepException: The step &apos;Add Place payload with &quot;chutki&quot; &quot;hindi&quot; and &quot;2-77 Db&quot;&apos; and 4 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@Given(&quot;Add Place payload with {string} {string} and {string}&quot;)
+public void add_place_payload_with_and(String string, String string2, String string3) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When(&quot;user calls {string} api with Post http request&quot;)
+public void user_calls_api_with_post_http_request(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then(&quot;API call is success with the status code {int}&quot;)
+public void api_call_is_success_with_the_status_code(Integer int1) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then(&quot;{string} in response body is {string}&quot;)
+public void in_response_body_is(String string, String string2) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+	at ✽.Add Place payload with &quot;chutki&quot; &quot;hindi&quot; and &quot;2-77 Db&quot;(file:///C:/Users/AkulaBhaskar/eclipse-workspace100/My-Map-API-Test-Automation/src/test/resources/features/PlaceAPI.feature:8)
+</pre></div></td>
+<td>0</td>
+<td>runners.TestRunner@183ec003</td></tr>
+<tr>
+<td title='runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Add place api call with a valid address", "Google Map Place API calls"</td>
+<td><div><pre>io.cucumber.testng.UndefinedStepException: The step &apos;Add Place payload with &quot;chinna&quot; &quot;telugu&quot; and &quot;1-64 Ndm&quot;&apos; and 4 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@Given(&quot;Add Place payload with {string} {string} and {string}&quot;)
+public void add_place_payload_with_and(String string, String string2, String string3) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When(&quot;user calls {string} api with Post http request&quot;)
+public void user_calls_api_with_post_http_request(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then(&quot;API call is success with the status code {int}&quot;)
+public void api_call_is_success_with_the_status_code(Integer int1) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then(&quot;{string} in response body is {string}&quot;)
+public void in_response_body_is(String string, String string2) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+	at ✽.Add Place payload with &quot;chinna&quot; &quot;telugu&quot; and &quot;1-64 Ndm&quot;(file:///C:/Users/AkulaBhaskar/eclipse-workspace100/My-Map-API-Test-Automation/src/test/resources/features/PlaceAPI.feature:8)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1198817209", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1198817209'><pre>io.cucumber.testng.UndefinedStepException: The step &apos;Add Place payload with &quot;chinna&quot; &quot;telugu&quot; and &quot;1-64 Ndm&quot;&apos; and 4 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@Given(&quot;Add Place payload with {string} {string} and {string}&quot;)
+public void add_place_payload_with_and(String string, String string2, String string3) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When(&quot;user calls {string} api with Post http request&quot;)
+public void user_calls_api_with_post_http_request(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then(&quot;API call is success with the status code {int}&quot;)
+public void api_call_is_success_with_the_status_code(Integer int1) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then(&quot;{string} in response body is {string}&quot;)
+public void in_response_body_is(String string, String string2) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+	at ✽.Add Place payload with &quot;chinna&quot; &quot;telugu&quot; and &quot;1-64 Ndm&quot;(file:///C:/Users/AkulaBhaskar/eclipse-workspace100/My-Map-API-Test-Automation/src/test/resources/features/PlaceAPI.feature:8)
+</pre></div></td>
 <td>0</td>
 <td>runners.TestRunner@183ec003</td></tr>
 </table><p>

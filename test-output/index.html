@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 3 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Default_suite" class="navigator-link">
-              <span class="suite-name border-passed">Default suite</span>
+              <span class="suite-name border-failed">Default suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -50,7 +50,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\AkulaBhaskar\AppData\Local\Temp\testng-eclipse-1916317804\testng-customsuite.xml</span>
+                    <span>C:\Users\AkulaBhaskar\AppData\Local\Temp\testng-eclipse--553518967\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -92,26 +92,31 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods,   2 passed</span>
+                    <span class="method-stats">3 methods, 3 failed,   </span>
                   </li>
                   <li>
-                    <span class="method-list-title passed">Passed methods</span>
-                    <span class="show-or-hide-methods passed">
-                      <a href="#" panel-name="suite-Default_suite" class="hide-methods passed suite-Default_suite"> (hide)</a> <!-- hide-methods passed suite-Default_suite -->
-                      <a href="#" panel-name="suite-Default_suite" class="show-methods passed suite-Default_suite"> (show)</a> <!-- show-methods passed suite-Default_suite -->
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Default_suite" class="hide-methods failed suite-Default_suite"> (hide)</a> <!-- hide-methods failed suite-Default_suite -->
+                      <a href="#" panel-name="suite-Default_suite" class="show-methods failed suite-Default_suite"> (show)</a> <!-- show-methods failed suite-Default_suite -->
                     </span>
-                    <div class="method-list-content passed suite-Default_suite">
+                    <div class="method-list-content failed suite-Default_suite">
                       <span>
-                        <img src="passed.png" width="3%"/>
+                        <img src="failed.png" width="3%"/>
                         <a href="#" panel-name="suite-Default_suite" title="runners.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Add place api call with a valid address&quot;, &quot;Google Map Place API calls&quot;)">runScenario("Add place api call with a valid address", "Google Map Place API calls")</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="passed.png" width="3%"/>
+                        <img src="failed.png" width="3%"/>
                         <a href="#" panel-name="suite-Default_suite" title="runners.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Add place api call with a valid address&quot;, &quot;Google Map Place API calls&quot;)">runScenario("Add place api call with a valid address", "Google Map Place API calls")</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content passed suite-Default_suite -->
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="runners.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Add place api call with a valid address&quot;, &quot;Google Map Place API calls&quot;)">runScenario("Add place api call with a valid address", "Google Map Place API calls")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Default_suite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -123,9 +128,9 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Default_suite" class="panel Default_suite">
-          <div class="suite-Default_suite-class-passed">
+          <div class="suite-Default_suite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
+              <img src="failed.png"/>
               <span class="class-name">runners.TestRunner</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -135,6 +140,33 @@
                   </a> <!-- runScenario("Add place api call with a valid address", "Google Map Place API calls") -->
                   <span class="method-name">runScenario</span>
                   <span class="parameters">("Add place api call with a valid address","Google Map Place API calls")</span>
+                  <div class="stack-trace">io.cucumber.testng.UndefinedStepException: The step &apos;Add Place payload with &quot;nanna&quot; &quot;kannada&quot; and &quot;3-65 NDM&quot;&apos; and 4 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@Given(&quot;Add Place payload with {string} {string} and {string}&quot;)
+public void add_place_payload_with_and(String string, String string2, String string3) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When(&quot;user calls {string} api with Post http request&quot;)
+public void user_calls_api_with_post_http_request(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then(&quot;API call is success with the status code {int}&quot;)
+public void api_call_is_success_with_the_status_code(Integer int1) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then(&quot;{string} in response body is {string}&quot;)
+public void in_response_body_is(String string, String string2) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+	at ✽.Add Place payload with &quot;nanna&quot; &quot;kannada&quot; and &quot;3-65 NDM&quot;(file:///C:/Users/AkulaBhaskar/eclipse-workspace100/My-Map-API-Test-Automation/src/test/resources/features/PlaceAPI.feature:8)
+
+</div> <!-- stack-trace -->
                   <em>
 (Runs Cucumber Scenarios)                  </em>
                 </div> <!-- method-content -->
@@ -145,16 +177,80 @@
                   </a> <!-- runScenario("Add place api call with a valid address", "Google Map Place API calls") -->
                   <span class="method-name">runScenario</span>
                   <span class="parameters">("Add place api call with a valid address","Google Map Place API calls")</span>
+                  <div class="stack-trace">io.cucumber.testng.UndefinedStepException: The step &apos;Add Place payload with &quot;chutki&quot; &quot;hindi&quot; and &quot;2-77 Db&quot;&apos; and 4 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@Given(&quot;Add Place payload with {string} {string} and {string}&quot;)
+public void add_place_payload_with_and(String string, String string2, String string3) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When(&quot;user calls {string} api with Post http request&quot;)
+public void user_calls_api_with_post_http_request(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then(&quot;API call is success with the status code {int}&quot;)
+public void api_call_is_success_with_the_status_code(Integer int1) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then(&quot;{string} in response body is {string}&quot;)
+public void in_response_body_is(String string, String string2) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+	at ✽.Add Place payload with &quot;chutki&quot; &quot;hindi&quot; and &quot;2-77 Db&quot;(file:///C:/Users/AkulaBhaskar/eclipse-workspace100/My-Map-API-Test-Automation/src/test/resources/features/PlaceAPI.feature:8)
+
+</div> <!-- stack-trace -->
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Add place api call with a valid address&quot;, &quot;Google Map Place API calls&quot;)">
+                  </a> <!-- runScenario("Add place api call with a valid address", "Google Map Place API calls") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Add place api call with a valid address","Google Map Place API calls")</span>
+                  <div class="stack-trace">io.cucumber.testng.UndefinedStepException: The step &apos;Add Place payload with &quot;chinna&quot; &quot;telugu&quot; and &quot;1-64 Ndm&quot;&apos; and 4 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@Given(&quot;Add Place payload with {string} {string} and {string}&quot;)
+public void add_place_payload_with_and(String string, String string2, String string3) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When(&quot;user calls {string} api with Post http request&quot;)
+public void user_calls_api_with_post_http_request(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then(&quot;API call is success with the status code {int}&quot;)
+public void api_call_is_success_with_the_status_code(Integer int1) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then(&quot;{string} in response body is {string}&quot;)
+public void in_response_body_is(String string, String string2) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+	at ✽.Add Place payload with &quot;chinna&quot; &quot;telugu&quot; and &quot;1-64 Ndm&quot;(file:///C:/Users/AkulaBhaskar/eclipse-workspace100/My-Map-API-Test-Automation/src/test/resources/features/PlaceAPI.feature:8)
+
+</div> <!-- stack-trace -->
                   <em>
 (Runs Cucumber Scenarios)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Default_suite-class-passed -->
+          </div> <!-- suite-Default_suite-class-failed -->
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\AkulaBhaskar\AppData\Local\Temp\testng-eclipse-1916317804\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\AkulaBhaskar\AppData\Local\Temp\testng-eclipse--553518967\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -211,20 +307,24 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(3);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'runScenario')
 data.setCell(0, 2, 'runners.TestRunner')
-data.setCell(0, 3, 4022);
+data.setCell(0, 3, 166);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'runScenario')
 data.setCell(1, 2, 'runners.TestRunner')
-data.setCell(1, 3, 244);
+data.setCell(1, 3, 20);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'runScenario')
+data.setCell(2, 2, 'runners.TestRunner')
+data.setCell(2, 3, 18);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 4 seconds</span>
+              <span class="suite-total-time">Total running time: 204 ms</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -252,20 +352,30 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">runners.TestRunner</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
-                <span class="method-name">setUpClass(org.testng.TestRunner@283e1759)</span>
+                <span class="method-name">setUpClass(org.testng.TestRunner@25cc7470)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">runScenario("Add place api call with a valid address", "Google Map Place API calls")</span>
-                <span class="method-start">803 ms</span>
+                <span class="method-start">1127 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">runScenario("Add place api call with a valid address", "Google Map Place API calls")</span>
-                <span class="method-start">4831 ms</span>
+                <span class="method-start">1305 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">runScenario("Add place api call with a valid address", "Google Map Place API calls")</span>
+                <span class="method-start">1329 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDownClass</span>
-                <span class="method-start">5082 ms</span>
+                <span class="method-start">1355 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
