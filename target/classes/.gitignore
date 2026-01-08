@@ -1,0 +1,17 @@
+/META-INF/
+
+# Maven
+/target/
+
+# TestNG & Cucumber reports
+/test-output/
+/cucumber-reports/
+
+# Logs
+*.log
+Logs.txt
+
+# IDE
+/.classpath
+/.project
+/.settings/
