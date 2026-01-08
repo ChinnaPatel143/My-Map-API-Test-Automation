@@ -1,7 +1,0 @@
-base\BaseTest.class
-utils\ResponseSpecBuilderUtil.class
-utils\RequestSpecBuilderUtil.class
-pojo\AddPlaceRequest.class
-utils\TestDataBuilder.class
-pojo\Location.class
-pojo\AddPlaceResponse.class
