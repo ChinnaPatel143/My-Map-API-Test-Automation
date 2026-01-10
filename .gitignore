@@ -1,15 +1,15 @@
 # Maven build output
-/target/
+target/
 
 # TestNG & Cucumber reports
-/test-output/
-/cucumber-reports/
+test-output/
+cucumber-reports/
 
 # Logs
 *.log
 Logs.txt
 
 # IDE (Eclipse)
-/.classpath
-/.project
-/.settings/
+.classpath
+.project
+.settings/

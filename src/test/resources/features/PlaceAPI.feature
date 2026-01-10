@@ -16,3 +16,4 @@ Examples:
 	|name	|	language	|	address		|
 	|chinna	|	telugu		|	1-64 Ndm	|
 	|chutki	|	hindi		|	2-77 Db		|
+	|pinku	|	English		|	4-65 Nskl	|
