@@ -14,6 +14,7 @@ Feature: Google Map Place API calls
 Examples:
 
 	|name	|	language	|	address		|
-	|chinna	|	telugu		|	1-64 Ndm	|
-	|chutki	|	hindi		|	2-77 Db		|
-	|pinku	|	English		|	4-65 Nskl	|
+	|Chinna	|	telugu		|	1-64 Ndm	|
+	|Chutki	|	hindi		|	2-75 Db		|
+	|Pinku	|	English		|	3-86 Nskl	|
+	|Tinku	|	English		|	4-97 Mdk	|
