@@ -2,9 +2,7 @@ package stepdefinitions;
 
 import static io.restassured.RestAssured.*;
 import static org.testng.Assert.assertEquals;
-
 import java.io.FileNotFoundException;
-
 import base.BaseTest;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
